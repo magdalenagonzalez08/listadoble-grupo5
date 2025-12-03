@@ -97,34 +97,39 @@
             padding: 20px;
             min-height: 500px;
             display: none;
+            overflow-x: auto;
         }
 
         .code-editor.active {
-            display: block;
+            display: flex;
         }
 
         .line-numbers {
-            float: left;
             color: #858585;
             text-align: right;
             padding-right: 20px;
             user-select: none;
             border-right: 1px solid #3e3e42;
             margin-right: 20px;
+            flex-shrink: 0;
         }
 
         .line-number {
             display: block;
             line-height: 1.8;
+            height: 1.8em;
         }
 
         .code-content {
+            flex: 1;
             overflow-x: auto;
         }
 
         .code-line {
             line-height: 1.8;
+            height: 1.8em;
             white-space: pre;
+            display: block;
         }
 
         .keyword { color: #569cd6; font-weight: normal; }
