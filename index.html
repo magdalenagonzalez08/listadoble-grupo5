@@ -438,4 +438,36 @@
 <span class="code-line">                    <span class="variable">sc</span>.<span class="method">nextLine</span>();</span>
 <span class="code-line">                    <span class="variable">list</span>.<span class="method">remove</span>(<span class="variable">n3</span>);</span>
 <span class="code-line">                    <span class="keyword">break</span>;</span>
-<span class="code-line">                <span class="keyword">case</span> <span class="string">"d"</span>:</span>
+<span class="code-line">                <span class="keyword">case</span> <span class="string">"d"</span>:
+                    <span class="variable">list</span>.<span class="method">printForward</span>();
+                    <span class="keyword">break</span>;
+                <span class="keyword">case</span> <span class="string">"e"</span>:
+                    <span class="variable">list</span>.<span class="method">printBackward</span>();
+                    <span class="keyword">break</span>;
+                <span class="keyword">case</span> <span class="string">"f"</span>:
+                    <span class="class-name">System</span>.<span class="variable">out</span>.<span class="method">println</span>(<span class="string">"Saliendo..."</span>);
+                    <span class="keyword">return</span>;
+                <span class="keyword">default</span>:
+                    <span class="class-name">System</span>.<span class="variable">out</span>.<span class="method">println</span>(<span class="string">"Opcion invalida."</span>);
+            }
+        }
+    }
+}</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab');
+            const editors = document.querySelectorAll('.code-editor');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            editors.forEach(editor => editor.classList.remove('active'));
+            
+            event.target.closest('.tab').classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+    </script>
+</body>
+</html></span>
